@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
-import { Github, Linkedin, Mail, ExternalLink, Code2, Database, Palette, Brain, Terminal, Rocket } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink, Code2, Database, Palette, Brain, Rocket } from 'lucide-react';
 
 export default function Portfolio() {
   const [formData, setFormData] = useState({
@@ -26,94 +26,120 @@ export default function Portfolio() {
   };
 
   const skills = {
-    'Programming Languages': [
-      { name: 'JavaScript', icon: '🟨' },
+    'Data Analytics & AI': [
       { name: 'Python', icon: '🐍' },
-      { name: 'C++', icon: '⚡' },
-      { name: 'SQL', icon: '🗄️' }
-    ],
-    'Frontend Technologies': [
-      { name: 'React.js', icon: '⚛️' },
-      { name: 'Vite', icon: '⚡' },
-      { name: 'HTML', icon: '🌐' },
-      { name: 'CSS', icon: '🎨' },
-      { name: 'Tailwind', icon: '💨' }
-    ],
-    'Data and AI': [
       { name: 'Pandas', icon: '🐼' },
       { name: 'NumPy', icon: '🔢' },
       { name: 'Matplotlib', icon: '📊' },
-      { name: 'Machine Learning', icon: '🤖' }
+      { name: 'Scikit-learn', icon: '🤖' },
+      { name: 'Power BI', icon: '📈' },
+      { name: 'SAP Analytics Cloud', icon: '☁️' },
+      { name: 'Excel', icon: '📑' }
     ],
-    'Development Tools': [
+    'Web Development': [
+      { name: 'HTML', icon: '🌐' },
+      { name: 'CSS', icon: '🎨' },
+      { name: 'JavaScript', icon: '🟨' },
+      { name: 'React.js', icon: '⚛️' },
+      { name: 'Vite', icon: '⚡' },
+      { name: 'Tailwind CSS', icon: '💨' }
+    ],
+    'Databases': [
+      { name: 'SQL', icon: '🗄️' },
+      { name: 'MySQL', icon: '🗃️' }
+    ],
+    'Tools & Platforms': [
       { name: 'Git', icon: '📦' },
       { name: 'GitHub', icon: '🐙' },
-      { name: 'VS Code', icon: '💻' },
-      { name: 'MySQL', icon: '🗃️' }
+      { name: 'WordPress', icon: '📝' },
+      { name: 'QT Creator', icon: '🔧' }
     ]
   };
 
   const projects = [
     {
-      title: 'AI-Powered Data Analytics Dashboard',
-      description: 'Built an interactive dashboard using React and Python for real-time data visualization and predictive analytics.',
-      tech: ['React', 'Python', 'Pandas', 'Machine Learning'],
-      link: 'https://github.com',
+      title: 'Research Paper Recommendation System',
+      description: 'AI-based paper recommendation system using similarity scoring algorithms to suggest relevant academic papers based on user preferences and research interests.',
+      tech: ['Python', 'AI', 'Machine Learning', 'NLP'],
+      link: 'https://github.com/tahafatmi1',
       image: 'https://miaoda-site-img.s3cdn.medo.dev/images/44ebc796-736d-40db-ab5d-37d106a5c35b.jpg'
     },
     {
-      title: 'E-Commerce Platform',
-      description: 'Developed a full-stack e-commerce website with user authentication, product management, and payment integration.',
-      tech: ['React', 'Node.js', 'MySQL', 'Tailwind'],
-      link: 'https://github.com',
+      title: 'SAP Analytics Cloud Dashboard',
+      description: 'Built comprehensive backlog dashboard consolidating 27,000+ rows into 200 actionable records with interactive KPIs and performance metrics.',
+      tech: ['SAP Analytics Cloud', 'Data Analytics', 'Power BI'],
+      link: 'https://github.com/tahafatmi1',
       image: 'https://miaoda-site-img.s3cdn.medo.dev/images/2e33ff90-8e5d-4573-8ef8-c28ceea5f14d.jpg'
     },
     {
-      title: 'Machine Learning Model Trainer',
-      description: 'Created a web application for training and evaluating ML models with custom datasets and hyperparameter tuning.',
-      tech: ['Python', 'NumPy', 'Matplotlib', 'JavaScript'],
-      link: 'https://github.com',
+      title: 'Airplane Ticketing System',
+      description: 'Desktop flight booking system with complete database integration, user authentication, and real-time seat availability management.',
+      tech: ['C++', 'MySQL', 'QT Creator'],
+      link: 'https://github.com/tahafatmi1',
       image: 'https://miaoda-site-img.s3cdn.medo.dev/images/10f6eab7-0c7e-4cd7-b805-acdb463978d0.jpg'
     },
     {
-      title: 'Portfolio Website Builder',
-      description: 'Designed a drag-and-drop portfolio builder with customizable templates and responsive design.',
-      tech: ['React', 'Vite', 'Tailwind', 'TypeScript'],
-      link: 'https://github.com',
+      title: 'Two Good Co Clone',
+      description: 'Fully responsive website clone with modern design, smooth animations, and optimized performance. Live production website.',
+      tech: ['HTML', 'CSS', 'JavaScript'],
+      link: 'https://two-good-co-clone-indol.vercel.app',
+      image: 'https://miaoda-site-img.s3cdn.medo.dev/images/0ab57174-362e-407c-bc06-9fd6085c6f22.jpg'
+    },
+    {
+      title: 'Crash Claim Website',
+      description: 'Lead generation application with Trusted Form integration, form validation, and responsive design for optimal user experience.',
+      tech: ['React.js', 'JavaScript', 'Tailwind CSS'],
+      link: 'https://www.crash-claim.org',
+      image: 'https://miaoda-site-img.s3cdn.medo.dev/images/2e33ff90-8e5d-4573-8ef8-c28ceea5f14d.jpg'
+    },
+    {
+      title: 'PublisherX Platform',
+      description: 'Professional publishing platform with content management, SEO optimization, and responsive design for multiple device types.',
+      tech: ['WordPress', 'PHP', 'JavaScript'],
+      link: 'https://www.publisherx.org',
       image: 'https://miaoda-site-img.s3cdn.medo.dev/images/0ab57174-362e-407c-bc06-9fd6085c6f22.jpg'
     }
   ];
 
   const experiences = [
     {
-      title: 'Data Analytics Intern',
-      company: 'Tech Solutions Inc.',
-      period: 'Summer 2024',
-      description: 'Analyzed large datasets to identify trends and patterns, created visualizations for stakeholder presentations.',
+      title: 'IT Intern - SAP MDM & Analytics Cloud',
+      company: 'Lucky Cement Ltd.',
+      period: 'Aug 2024 - Sept 2024',
+      description: 'Built SAP Analytics Cloud backlog dashboard consolidating 27,000+ rows into 200 actionable records. Improved data accuracy and supported SAP MDM data standardization.',
       icon: Database
     },
     {
-      title: 'Frontend Developer',
-      company: 'University Web Team',
-      period: '2023 - Present',
-      description: 'Developed and maintained university department websites using React and modern web technologies.',
+      title: 'Data Analytics Intern',
+      company: 'CodeAlpha',
+      period: 'March 2025 - April 2025',
+      description: 'Performed exploratory data analysis, data cleaning, and sentiment analysis using Python and SQL on real-world datasets.',
+      icon: Brain
+    },
+    {
+      title: 'WordPress Developer Intern',
+      company: 'Donati Tech',
+      period: 'Sept 2023 - Oct 2023',
+      description: 'Built and optimized 5+ responsive websites focusing on performance and SEO. Delivered high-quality solutions for client projects.',
       icon: Code2
     },
     {
-      title: 'AI Research Assistant',
-      company: 'CS Department',
-      period: '2023 - 2024',
-      description: 'Assisted in machine learning research projects, implemented algorithms, and documented findings.',
-      icon: Brain
+      title: 'Front-End Developer',
+      company: 'Academic Projects',
+      period: '2023 - Present',
+      description: 'Developed React.js applications with reusable components, validated forms, integrated third-party scripts, and resolved production issues.',
+      icon: Palette
     }
   ];
 
   const achievements = [
-    '🏆 Dean\'s List - 3 consecutive semesters',
-    '🥇 First Place - University Hackathon 2024',
-    '📜 AWS Certified Cloud Practitioner',
-    '🎓 Google Data Analytics Professional Certificate',
-    '💡 Published research paper on ML optimization'
+    '🎓 3rd Year BS Computer Science - Dawood University of Engineering and Technology',
+    '📊 Built SAP Analytics Cloud dashboard with 27,000+ data records',
+    '💼 Completed 3 professional internships in Data Analytics and Web Development',
+    '🌐 Developed and deployed 5+ live production websites',
+    '🤖 Created AI-based Research Paper Recommendation System',
+    '📈 Expertise in Power BI and SAP Analytics Cloud dashboards',
+    '⚛️ Proficient in React.js with multiple production applications'
   ];
 
   return (
@@ -127,13 +153,13 @@ export default function Portfolio() {
           <div className="text-center space-y-8 animate-fade-in">
             <div className="space-y-4">
               <h1 className="text-5xl xl:text-7xl font-bold tracking-tight">
-                <span className="gradient-text">Your Name</span>
+                <span className="gradient-text">Syed Taha Fatmi</span>
               </h1>
               <p className="text-2xl xl:text-3xl text-muted-foreground font-medium">
                 Data Analyst | AI Enthusiast | Front End Developer
               </p>
               <p className="text-lg xl:text-xl text-muted-foreground">
-                Currently pursuing BS in Computer Science
+                3rd Year BS Computer Science Student
               </p>
             </div>
 
@@ -158,13 +184,13 @@ export default function Portfolio() {
             </div>
 
             <div className="flex gap-6 justify-center pt-8">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+              <a href="https://github.com/tahafatmi1" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
                 <Github className="h-8 w-8" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+              <a href="https://linkedin.com/in/taha-fatmi" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-8 w-8" />
               </a>
-              <a href="mailto:your.email@example.com" className="text-foreground hover:text-primary transition-colors">
+              <a href="mailto:tahafatmi689@gmail.com" className="text-foreground hover:text-primary transition-colors">
                 <Mail className="h-8 w-8" />
               </a>
             </div>
@@ -182,16 +208,16 @@ export default function Portfolio() {
             <CardContent className="p-8 xl:p-12">
               <div className="space-y-6 text-lg leading-relaxed">
                 <p>
-                  Hello! I'm a passionate Computer Science student with a deep interest in <span className="text-primary font-semibold">Data Analytics</span>, <span className="text-primary font-semibold">Artificial Intelligence</span>, and <span className="text-primary font-semibold">Web Development</span>.
+                  Hello! I'm Syed Taha Fatmi, a passionate 3rd year BS Computer Science student at <span className="text-primary font-semibold">Dawood University of Engineering and Technology</span>, focused on <span className="text-primary font-semibold">Data Analytics</span> and <span className="text-primary font-semibold">Artificial Intelligence</span>.
                 </p>
                 <p>
-                  Throughout my academic journey, I've gained hands-on experience building real-world projects that solve practical problems. From developing interactive web applications to implementing machine learning algorithms, I love bringing ideas to life through code.
+                  I have practical experience in data cleaning, visualization, AI-based systems, and <span className="text-primary font-semibold">SAP Analytics Cloud</span>. Through my internship at Lucky Cement Ltd., I built a comprehensive dashboard consolidating over 27,000 rows of data into actionable insights, significantly improving data accuracy and decision-making processes.
                 </p>
                 <p>
-                  My approach to problem-solving combines analytical thinking with creative design. I believe in writing clean, efficient code and continuously learning new technologies to stay at the forefront of the tech industry.
+                  My supporting skills in <span className="text-primary font-semibold">Web Development</span> allow me to build responsive front-end applications using React.js, JavaScript, and modern frameworks. I've successfully developed and deployed multiple live production websites, combining aesthetic design with functional excellence.
                 </p>
                 <p>
-                  I'm actively seeking internship opportunities where I can apply my skills, contribute to meaningful projects, and grow as a developer. Let's build something amazing together!
+                  I'm experienced through internships at Lucky Cement Ltd., CodeAlpha, and Donati Tech, along with numerous academic projects and work with real-world datasets. I'm actively seeking opportunities to apply my skills in data analytics, AI, and web development to solve meaningful problems and contribute to innovative projects.
                 </p>
               </div>
             </CardContent>
@@ -210,10 +236,10 @@ export default function Portfolio() {
               <Card key={category} className="hover-lift">
                 <CardHeader>
                   <CardTitle className="text-2xl flex items-center gap-2">
-                    {category === 'Programming Languages' && <Terminal className="h-6 w-6 text-primary" />}
-                    {category === 'Frontend Technologies' && <Palette className="h-6 w-6 text-primary" />}
-                    {category === 'Data and AI' && <Brain className="h-6 w-6 text-primary" />}
-                    {category === 'Development Tools' && <Code2 className="h-6 w-6 text-primary" />}
+                    {category === 'Data Analytics & AI' && <Brain className="h-6 w-6 text-primary" />}
+                    {category === 'Web Development' && <Palette className="h-6 w-6 text-primary" />}
+                    {category === 'Databases' && <Database className="h-6 w-6 text-primary" />}
+                    {category === 'Tools & Platforms' && <Code2 className="h-6 w-6 text-primary" />}
                     {category}
                   </CardTitle>
                 </CardHeader>
@@ -379,7 +405,7 @@ export default function Portfolio() {
 
           <div className="flex gap-8 justify-center mt-12">
             <a 
-              href="https://github.com" 
+              href="https://github.com/tahafatmi1" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
@@ -388,7 +414,7 @@ export default function Portfolio() {
               <span>GitHub</span>
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://linkedin.com/in/taha-fatmi" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
@@ -397,7 +423,7 @@ export default function Portfolio() {
               <span>LinkedIn</span>
             </a>
             <a 
-              href="mailto:your.email@example.com"
+              href="mailto:tahafatmi689@gmail.com"
               className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-6 w-6" />
@@ -412,7 +438,7 @@ export default function Portfolio() {
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col xl:flex-row justify-between items-center gap-6">
             <p className="text-muted-foreground">
-              © 2025 Personal Portfolio. All rights reserved.
+              © 2025 Syed Taha Fatmi. All rights reserved.
             </p>
             <nav className="flex flex-wrap gap-6 justify-center">
               <button onClick={() => scrollToSection('hero')} className="text-muted-foreground hover:text-primary transition-colors">
